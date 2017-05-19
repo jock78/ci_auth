@@ -5,7 +5,7 @@
  * for Admin group only
  */
 class Admin extends MY_Controller {
-
+   protected $access = "Admin";
 	public function index()
 	{
 		$this->load->view("header");
