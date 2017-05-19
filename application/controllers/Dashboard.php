@@ -5,7 +5,7 @@
  * for all logged in users
  */
 class Dashboard extends MY_Controller {	
-
+protected $access = "Editor, Admin"; // you can put * to get access for all roles
 	public function index()
 	{
 		$this->load->view("header");
